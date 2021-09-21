@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #00060b, #01233D, #00060b);
+}
+
+.text {
+  margin: 0 10px 10px 10px;
+  width: 95%;
+}
+.text h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #d58e27;
+}
+.text p {
+  margin-top: 2px;
+  font-weight: 500;
+  color: #e7bb7b;
+  letter-spacing: 0.5px;
+}
+
+.date-time {
+  width: 340px;
+  padding: 10px;
+  margin: 15px 10px 20px 10px;
+  border: 2px solid #d58e27;
+  color: #d58e27;
+}
+
+.date {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.time {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.timer h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #d58e27;
+  border: 2px solid #d58e27;
+  height: 55px;
+  width: 100px;
+}
+
+button {
+  background-image: linear-gradient(to right, #a46b24, #ce862d, #a46b24);
+  border-color: #BD6D2A;
+  color: #00060b;
+  font-family: "Orbitron", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.minus-btn, .plus-btn {
+  width: 65px;
+  height: 46px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.start-btn, .reset-btn {
+  width: 120px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.reset-btn {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

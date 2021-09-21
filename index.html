@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time machine</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="text">
+    <h1>Time machine</h1>
+    <div>
+      <p>1. Set how many years you want to go backward or forward in time.</p>
+      <p>2. Click on START to travel and on RESET to come back.</p>
+    </div>
+  </header>
+
+  <div class="date-time">
+    <p class="time"></p>
+    <p class="date">
+      <span class="day-el">e</span>/
+      <span class="month-el">e</span>/
+      <span class="year-el"></span>
+    </p>
+  </div>
+
+  <div class="timer">
+    <button class="minus-btn">-</button>
+    <h2 id="count-el">0</h2>
+    <button class="plus-btn">+</button>
+  </div>
+
+  <button class="start-btn">START</button>
+  <button class="reset-btn">RESET</button>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
