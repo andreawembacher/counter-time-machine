@@ -1,4 +1,4 @@
-//////Digital clock//////
+//////Set digital clock//////
 function currentTime() {
   let now = new Date();
   let hour = now.getHours();
@@ -16,7 +16,25 @@ function currentTime() {
 setInterval(currentTime, 1000);
 
 
-//////Counter//////
+////////Set date////////////
+let now = new Date();
+let year = now.getFullYear();
+let month = now.getMonth() + 1;
+let day = now.getDate();
+
+day = (day < 10) ? "0" + day : day;
+month = (month < 10) ? "0" + month : month;
+
+let dayEl = document.querySelector(".day-el");
+let monthEl = document.querySelector(".month-el");
+let yearEl = document.querySelector(".year-el");
+
+dayEl.textContent = day;
+monthEl.textContent = month;
+yearEl.textContent = year;
+
+
+//////Set counter//////
 let count = 0;
 const countEl = document.getElementById("count-el");
 const minusBtn = document.querySelector(".minus-btn");
@@ -36,25 +54,7 @@ function increase() {
 }
 
 
-////////Date////////////
-let now = new Date();
-let year = now.getFullYear();
-let month = now.getMonth() + 1;
-let day = now.getDate();
-
-day = (day < 10) ? "0" + day : day;
-month = (month < 10) ? "0" + month : month;
-
-let dayEl = document.querySelector(".day-el");
-let monthEl = document.querySelector(".month-el");
-let yearEl = document.querySelector(".year-el");
-
-dayEl.textContent = day;
-monthEl.textContent = month;
-yearEl.textContent = year;
-
-
-////////Time travel///////
+////////Modify date///////
 const startBtn = document.querySelector(".start-btn");
 const resetBtn = document.querySelector(".reset-btn");
 
