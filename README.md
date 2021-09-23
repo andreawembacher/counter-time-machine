@@ -3,4 +3,4 @@
 
 
 <h2>About the project</h2>
-<a href="https://andreawembacher.github.io/counter-time-machine/"><img src="https://github.com/andreawembacher/counter-time-machine/blob/main/assets/images/time-machine-img.JPG?raw=true"></img><a/>
+<a target="_blank" href="https://andreawembacher.github.io/counter-time-machine/"><img src="https://github.com/andreawembacher/counter-time-machine/blob/main/assets/images/time-machine-img.JPG?raw=true"></img><a/>
