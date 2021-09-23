@@ -21,13 +21,12 @@ let now = new Date();
 let year = now.getFullYear();
 let month = now.getMonth() + 1;
 let day = now.getDate();
-
-day = (day < 10) ? "0" + day : day;
-month = (month < 10) ? "0" + month : month;
-
 let dayEl = document.querySelector(".day-el");
 let monthEl = document.querySelector(".month-el");
 let yearEl = document.querySelector(".year-el");
+
+day = (day < 10) ? "0" + day : day;
+month = (month < 10) ? "0" + month : month;
 
 dayEl.textContent = day;
 monthEl.textContent = month;
@@ -62,8 +61,6 @@ startBtn.addEventListener("click", startTravel);
 resetBtn.addEventListener("click", toPresent);
 
 function startTravel() {
-  count = Number(count);
-  year = Number(year);
   yearEl.textContent = year + count;
 
   if (count != 0) {
