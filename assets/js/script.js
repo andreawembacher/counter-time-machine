@@ -33,23 +33,43 @@ monthEl.textContent = month;
 yearEl.textContent = year;
 
 
+//////Display counter//////
+let dateTimeDiv = document.querySelector(".date-time");
+
+let timerDiv = document.createElement("div");
+timerDiv.className = "timer";
+dateTimeDiv.after(timerDiv);
+
+let minusBtn = document.createElement("button");
+minusBtn.className = "minus-btn";
+minusBtn.innerHTML = "-";
+timerDiv.prepend(minusBtn);
+
+let h2CountEl = document.createElement("h2");
+h2CountEl.className = "count-el";
+h2CountEl.innerHTML = "0";
+minusBtn.after(h2CountEl);
+
+let plusBtn = document.createElement("button");
+plusBtn.className = "plus-btn";
+plusBtn.innerHTML = "+";
+timerDiv.append(plusBtn);
+
+
 //////Set counter//////
 let count = 0;
-const countEl = document.getElementById("count-el");
-const minusBtn = document.querySelector(".minus-btn");
-const plusBtn = document.querySelector(".plus-btn");
 
 minusBtn.addEventListener("click", decrease);
 plusBtn.addEventListener("click", increase);
 
 function decrease() {
   count -= 1;
-  countEl.textContent = count;
+  h2CountEl.textContent = count;
 }
 
 function increase() {
   count += 1;
-  countEl.textContent = count;
+  h2CountEl.textContent = count;
 }
 
 
@@ -71,7 +91,7 @@ function startTravel() {
 
 function toPresent() {
   count = 0;
-  countEl.textContent = 0;
+  h2CountEl.textContent = 0;
 
   year = now.getFullYear();
   yearEl.textContent = year;
